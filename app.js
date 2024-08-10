@@ -4,7 +4,7 @@ const apiKey = '805d3a3c99ede71a192033bd32d79274';
 
 const validatePhoneNumber = async (phoneNumber) => {
     try {
-        const response = await fetch(`http://apilayer.net/api/validate?access_key=${apiKey}&number=${phoneNumber}`);
+        const response = await fetch(`https://apilayer.net/api/validate?access_key=${apiKey}&number=${phoneNumber}`);
         
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
